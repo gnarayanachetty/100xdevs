@@ -1,1 +1,0 @@
-console.log('hello world welcome to my world of journey to the js .')
