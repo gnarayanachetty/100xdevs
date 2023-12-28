@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	 <head>
+			 <meta charset="utf-8">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <title>Title</title>
+			 <link rel="stylesheet" href="">
+	 </head>
+					 
+	 <body>
+		<script>
+			function getPersonData(){
+				fetch('https://fakerapi.com/api/v1/2d8b4/getPersons').then(function(response){
+					response.json().then(function(){
+						console.log(response);
+					})
+				})
+			}
+		</script>
+					 <button onclick="getPersonData">
+						click me
+					 </button>
+	 </body>
+					 
+</html>
